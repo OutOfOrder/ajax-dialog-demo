@@ -1,0 +1,3 @@
+<%= content_tag :li, id: "sprocket_#{sprocket.id}" do -%>
+  <%= link_to "Edit sprocket: #{sprocket.model}", edit_sprocket_path(sprocket, format: :dialog), class: 'ajax-dialog' %>
+<% end -%>

@@ -1,0 +1,25 @@
+<%= form_for @sprocket, remote: true, html: { id: 'new-sprocket-form'} do |f| %>
+  <% if @sprocket.errors.any? -%>
+    <ul class='errors'>
+      <% @sprocket.errors.full_messages.each do |msg| -%>
+        <li class='error'><%= msg %></li>
+      <% end -%>
+    </ul>
+  <% end -%>
+  <div>
+    <%= f.label :model %>
+    <%= f.text_field :model %>
+  </div>
+  <div>
+    <%= f.label :width %>
+    <%= f.text_field :width %>
+  </div>
+  <div>
+    <%= f.label :height %>
+    <%= f.text_field :height %>
+  </div>
+  <div>
+    <%= f.label :weight %>
+    <%= f.text_field :weight %>
+  </div>
+<% end %>

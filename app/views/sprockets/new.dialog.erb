@@ -1,0 +1,13 @@
+<%= content_tag :div, class: 'modal hide fade', tabIndex: -1,  role: 'dialog', 'aria-hidden' => 'true' do  -%>
+  <div class='modal-header'>
+    <button type='button' class='close' data-dismiss='modal' aria-hidden=true>x</button>
+    <h3>New sprocket</h3>
+  </div>
+  <div class='modal-body'>
+    <%= render 'form' %>
+  </div>
+  <div class='modal-footer'>
+    <button class='btn btn-primary' onclick="$('#new-sprocket-form').submit()">Save</button>
+    <button class="btn" data-dismiss="modal" aria-hidden=true>Cancel</button>
+  </div>
+<% end -%>

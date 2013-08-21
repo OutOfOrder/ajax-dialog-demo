@@ -1,0 +1,6 @@
+<h1>Ajax-dialog.js</h1>
+&nbsp;&nbsp;<%= link_to 'New sprocket', new_sprocket_path(format: :dialog), class: 'ajax-dialog' %>
+<h3>Existing Sprockets</h3>
+<ul id="sprockets">
+  <%= render partial: 'sprockets/sprocket', collection: @sprockets %>
+</ul>
