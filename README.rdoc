@@ -2,4 +2,4 @@
 
 This is a simple demo to show of our approach to handling ajax dialogs within an application.
 
-Live demo - http://ajax-dialog-demo.herokuapp.com/
+Live demo - http://ajax-dialog-demo.herokuapp.com
